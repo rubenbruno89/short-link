@@ -1,10 +1,19 @@
-# short-link
-Encurtador de URL em BAT Lote 
+# Script de Encurtamento de URL
 
-Este é um script em lote que permite ao usuário encurtar uma URL usando uma API. O script começa solicitando ao usuário a URL que deseja encurtar usando o comando "set /p". A URL digitada é armazenada na variável "url".
+Este script em lote foi criado para facilitar o processo de encurtamento de URLs. Ele utiliza a API do serviço de encurtamento de links hospedado em `https://short-link-api.vercel.app/` para gerar um link curto a partir de uma URL fornecida pelo usuário.
 
-Em seguida, o script utiliza o comando "curl" para enviar uma solicitação HTTP GET à API de encurtamento de URL "https://short-link-api.vercel.app/". O comando "curl" envia a URL digitada pelo usuário como um parâmetro de consulta na solicitação HTTP GET, adicionando o valor da variável "url" ao final da URL da API, após o caractere "?".
+## Como utilizar
 
-A API processa a solicitação e retorna uma resposta que inclui a URL encurtada. O comando "curl" exibe a resposta na tela do usuário, mostrando a URL encurtada retornada pela API.
+1. Certifique-se de ter o CURL instalado em seu sistema.
+2. Abra o arquivo de script (.bat) em um editor de texto.
+3. Execute o script.
+4. Será exibida a mensagem "Escreva a URL a ser encurtada:". Insira a URL que você deseja encurtar.
+5. O script fará uma chamada para a API de encurtamento de links passando a URL fornecida como parâmetro.
+6. O link encurtado será exibido no console.
+7. O script aguardará até que você pressione qualquer tecla para encerrar a execução.
 
-Esse script pode ser útil para os usuários que desejam encurtar URLs para uso em suas postagens em redes sociais ou em outros tipos de conteúdo online. No entanto, é importante observar que este script depende da disponibilidade e funcionamento da API usada para encurtar a URL.
+## Observações
+
+- Certifique-se de ter uma conexão com a internet para que o script possa acessar a API de encurtamento de links.
+- O serviço de encurtamento de links utilizado pelo script é hospedado em `https://short-link-api.vercel.app/`, verifique suas políticas e termos de uso.
+- O script pode ser personalizado e adaptado de acordo com as necessidades do usuário.
